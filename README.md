@@ -14,14 +14,16 @@ Summary: Routines for the polynomial spline fitting routines hazard regression, 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-polspline-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-polspline-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-polspline-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-polspline-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-polspline-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-polspline-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-polspline-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-polspline-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-polspline-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-polspline-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-polspline-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-polspline-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-polspline/badges/version.svg)](https://anaconda.org/conda-forge/r-polspline)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-polspline/badges/downloads.svg)](https://anaconda.org/conda-forge/r-polspline)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--polspline-green.svg)](https://anaconda.org/conda-forge/r-polspline) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-polspline.svg)](https://anaconda.org/conda-forge/r-polspline) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-polspline.svg)](https://anaconda.org/conda-forge/r-polspline) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-polspline.svg)](https://anaconda.org/conda-forge/r-polspline) |
 
 Installing r-polspline
 ======================
