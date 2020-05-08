@@ -1,4 +1,4 @@
-{% set version = "1.1.17" %}
+{% set version = "1.1.18" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/polspline_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/polspline/polspline_{{ version }}.tar.gz
-  sha256: d67b269d01105d4a6ea774737e921e66e065a859d1931ae38a70f88b6fb7ee30
+  sha256: df250ee144bfff154249ba50308f46863107ef3efb2333ad908e599ed0eb0102
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,11 +44,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=polspline
   license: GPL (>= 2)
-  summary: Routines for the polynomial spline fitting routines hazard regression, hazard estimation
-    with flexible tails, logspline, lspec, polyclass, and polymars, by C. Kooperberg
-    and co-authors.
+  summary: Routines for the polynomial spline fitting routines hazard regression, hazard estimation with flexible tails, logspline, lspec, polyclass, and polymars, by C. Kooperberg and co-authors.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
