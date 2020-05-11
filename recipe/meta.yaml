@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -32,6 +32,7 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - libblas
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
@@ -43,7 +44,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=polspline
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Routines for the polynomial spline fitting routines hazard regression, hazard estimation with flexible tails, logspline, lspec, polyclass, and polymars, by C. Kooperberg and co-authors.
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
