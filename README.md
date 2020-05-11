@@ -3,7 +3,7 @@ About r-polspline
 
 Home: https://CRAN.R-project.org/package=polspline
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: BSD 3-Clause
 
