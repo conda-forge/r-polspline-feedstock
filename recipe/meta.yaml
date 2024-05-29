@@ -1,4 +1,4 @@
-{% set version = "1.1.24" %}
+{% set version = "1.1.25" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/polspline_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/polspline/polspline_{{ version }}.tar.gz
-  sha256: 6641c3666727841d291e3bbeda548ca422e4f04e7ba92e806486ca741c3a5455
+  sha256: 2943fc4cd922300afeaa58e6a0e4c21e5a0f7255e6367c7ea6ad136fce1e9ba3
 
 build:
   merge_build_host: true  # [win]
@@ -22,7 +22,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('fortran') }}        # [not win]
     - {{ compiler('m2w64_fortran') }}  # [win]
     - {{ posix }}filesystem        # [win]
